@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOTRA WEB-SITE</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/stye.css" />
+  </head>
+
+  <body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link ml-2" href="#">الحالات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-2" href="#">الصور</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-2" href="#">المناسبات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-2" href="#">تواصل معنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-2" href="#">نبذه عنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active ml-2" aria-current="page" href="#"
+                >الرئيسئة</a
+              >
+            </li>
+          </ul>
+          <div class="logo">
+            <span>لجمع التبرعات الخيرية</span>
+            <img src="imgs/C (1).png" height="50" alt="" />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="hr"></div>
+
+    <!-- Start Login -->
+    <section class="login">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div>
+              <button class="btn" href="#" onclick="showForm()">
+                حساب جديد
+              </button>
+              <button class="btn" href="#" onclick="loginAcount()">
+                تسجيل الدخول
+              </button>
+            </div>
+            <form action="Home.html" id="new">
+              <div class="col-auto">
+                <label class="sr-only" for="inlineFormInputGroup"
+                  >Username</label
+                >
+                <div class="input-group mb-2 p-0">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-user"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="inlineFormInputGroup"
+                    placeholder="Username"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- 1 username -->
+              <div class="col-auto">
+                <label class="sr-only" for="inlineFormInputGroup">Email</label>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="email"
+                    class="form-control form-control-lg"
+                    id="inlineFormInputGroup"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- 1 Email -->
+              <div class="col-auto">
+                <label class="sr-only" for="inlineFormInputGroup"
+                  >password</label
+                >
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-key"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="password"
+                    class="form-control form-control-lg"
+                    id="inlineFormInputGroup"
+                    placeholder="Password"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- 1 password -->
+              <div class="col-auto">
+                <label class="sr-only" for="inlineFormInputGroup"
+                  >address</label
+                >
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-home"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="inlineFormInputGroup"
+                    placeholder="Address"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- 1 adress -->
+              <div class="col-auto">
+                <label class="sr-only" for="inlineFormInputGroup">Number</label>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-phone"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="inlineFormInputGroup"
+                    placeholder="Phone Number"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- 1 phone number -->
+              <input type="submit" class="confirm" value="تاكيد" />
+            </form>
+
+            <form action="Home.html" id="creat">
+              <div class="col-auto">
+                <label class="sr-only" for="inlineFormInputGroup">Email</label>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="email"
+                    class="form-control form-control-lg"
+                    id="inlineFormInputGroup"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- 1 Email -->
+
+              <div class="col-auto">
+                <label class="sr-only" for="inlineFormInputGroup"
+                  >password</label
+                >
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-key"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="password"
+                    class="form-control form-control-lg"
+                    id="inlineFormInputGroup"
+                    placeholder="Password"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- 1 password -->
+
+              <input type="submit" class="confirm" value="تسجيل" />
+            </form>
+            <div class="mt-4">
+              <img src="imgs/B (1).png" class="logo" alt="" />
+              <div class="social">
+                <a href="#"> <i class="fab fa-2x fa-facebook-f final"></i> </a>
+                <a href="#"> <i class="fab fa-2x fa-google final"></i> </a>
+                <a href="#"> <i class="fab fa-2x fa-twitter final"></i> </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <img src="imgs/login.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Login -->
+
+    <!-- Start Footer -->
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <p>Copyright © Ethereal 2018</p>
+          </div>
+          <div class="col-md-4">
+            <a href="#"> <i class="fab fa-2x fa-facebook-f final"></i> </a>
+            <a href="#"> <i class="fab fa-2x fa-google final"></i> </a>
+            <a href="#"> <i class="fab fa-2x fa-twitter final"></i> </a>
+          </div>
+          <div class="col-md-4">
+            <p>Designed by <span class="name"> Nehal Yahia</span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
